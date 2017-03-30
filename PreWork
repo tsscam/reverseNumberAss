@@ -1,0 +1,22 @@
+namespace Reverse_Number_Assignment
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                string String, ReverseStr = "";
+                Console.Write("Please type 5 numbers here (and hit Enter): ");
+                String = Console.ReadLine();
+
+                for (int i = String.Length - 1; i >= 0; i--)
+                {
+                    ReverseStr = ReverseStr + String[i];
+
+                }
+                Console.WriteLine("Those 5 numbers reversed are : {0}", ReverseStr);
+                Console.ReadLine();
+            }
+        }
+    }
+}
